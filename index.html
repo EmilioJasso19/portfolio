@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/533db30638.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--NAVBAR PARA DIFERENTES SECCIONES -->
+    <nav class="navbar">
+        <!-- LOGO -->
+        <picture class="logo">
+            <img src="img/logo.jpg" class="logo-img" alt="Logo" />
+        </picture>
+        <!-- LINKS -->
+        <ul>
+            <li><a href="#header">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="header">
+        <section class="intro">
+            <span class="intro-texts">
+                <p class="intro-text">Hola, soy un desarrollador web.</p>
+                <h1 class="intro-name">Soy Emilio Jasso</h1>
+                <h2 class="intro-role">Desarrollador Frontend</h2>
+                <p class="intro-description">
+                    Me apasiona crear interfaces web modernas, rápidas y accesibles.
+                    Combino diseño atractivo con código limpio para ofrecer experiencias digitales que realmente
+                    funcionan.
+                </p>
+            </span>
+            <span>
+                <a href="#projects"><button class="cta-btn cta-btn-primary">Ver Proyectos</button></a>
+                <a href="#contact"><button class="cta-btn cta-btn-secondary">Contáctame</button></a>
+            </span>
+        </section>
+        <picture class="profile-picture">
+            <img src="img/mi-foto.png" class="profile-img" alt="Foto de Emilio Jasso" />
+        </picture>
+    </header>
+
+    <!-- SERVICIOS -->
+    <section id="services" class="section">
+        <div class="service-header">
+            <h2>Servicios</h2>
+            <p class="service-description">
+                Ofrezco soluciones digitales adaptadas a tus necesidades.
+                Desde páginas web dinámicas hasta estrategias de visibilidad online,
+                mi objetivo es ayudarte a crecer en el mundo digital.
+            </p>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>Desarrollo de sitios web</h3>
+                <p>Diseño y desarrollo de sitios web responsivos y personalizados que se adaptan a cualquier
+                    dispositivo.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+                <h3>Optimización para motores de búsqueda (SEO)</h3>
+                <p>Optimización para mejorar tu posicionamiento en buscadores y atraer más clientes.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>Consultoría en tecnología web</h3>
+                <p>Asesoría sobre tecnologías y buenas prácticas para potenciar tu presencia digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+        <div>
+            <h2>Proyectos</h2>
+            <p class="project-msg">
+                Estos son algunos de mis proyectos más recientes, donde he aplicado diferentes tecnologías
+                para resolver necesidades reales de clientes y usuarios.
+            </p>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <picture class="picture-project">
+                    <img src="img/gpc.jpeg" alt="GPC Logistica" class="picture-project__img">
+                </picture>
+                <div class="features">
+                    <div class="feature__item">Web</div>
+                    <div class="feature__item">Laravel</div>
+                    <div class="feature__item">Livewire</div>
+                </div>
+                <div class="project-footer">
+                    <h4 class="project-title">GPC Logistica</h4>
+                    <p>
+                        Sistema de gestión logística y pagos. Desarrollé y di
+                        mantenimiento a módulos de operaciones.
+                    </p>
+                    <a href="#" class="project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+            <div class="project-card">
+                <picture class="picture-project">
+                    <img src="img/rotomfit.png" alt="RotomFit" class="picture-project__img">
+                </picture>
+                <div class="features">
+                    <div class="feature__item">Web</div>
+                    <div class="feature__item">Laravel</div>
+                    <div class="feature__item">React</div>
+                </div>
+                <div class="project-footer">
+                    <h4 class="project-title">RotomFit</h4>
+                        <p>
+                            Aplicación web para una clínica de fisioterapia. Permite gestionar citas, rutinas
+                            personalizadas y expedientes clínicos.
+                        </p>
+                        <a href="#" class="project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <picture class="picture-project">
+                    <img src="img/maternico.jpeg" alt="MaterniCo" class="picture-project__img">
+                </picture>
+                <div class="features">
+                    <div class="feature__item">Mobile</div>
+                    <div class="feature__item">Laravel</div>
+                    <div class="feature__item">React Native</div>
+                </div>
+                <div class="project-footer">
+                    <h4 class="project-title">MaterniCo</h4>
+                        <p>
+                            Aplicación móvil para mamás primerizas. Incluye foros, recordatorios y directorio de centros
+                            de salud.
+                        </p>
+                        <a href="#" class="project-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Habilidades</h2>
+        <p>
+            Estas son algunas de las tecnologías con las que trabajo para dar vida a proyectos web y móviles:
+        </p>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-css3-alt"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-react"></i>
+                <p>React</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-laravel"></i>
+                <p>Laravel</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-git"></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-brands skill-icon fa-github"></i>
+                <p>GitHub</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid skill-icon fa-database"></i>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFORMACION/CONTACTO DE MI -->
+    <section id="contact">
+        <span class="contact-data">
+            <h2>Conversemos sobre tu próximo proyecto</h2>
+            <p>
+                ¿Tienes una idea en mente o necesitas ayuda con tu sitio web?
+                Escríbeme y juntos encontraremos la mejor solución para tu negocio.
+            </p>
+            <div class="social-links">
+                <div class="social-link">
+                    <div class="social-icon-container">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="social-phone">123-456-7890</p>
+                </div>
+                <div class="social-link">
+                    <div class="social-icon-container">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="social-name"><a href="mailto:emiliojasso0409@gmail.com"
+                            target="_blank">emiliojasso0409@gmail.com</a></p>
+                </div>
+                <div class="social-link">
+                    <div class="social-icon-container">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <p class="social-name"><a href="https://www.linkedin.com/in/emilio-jasso/"
+                            target="_blank">emiliojasso</a></p>
+                </div>
+                <div class="social-link">
+                    <div class="social-icon-container">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <p class="social-name"><a href="https://github.com/emiliojasso19" target="_blank">emiliojasso19</a>
+                    </p>
+                </div>
+            </div>
+        </span>
+        <span class="contact-data">
+            <form action="#" class="contact-form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Emilio Jasso">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" required>
+                </div>
+                <div>
+                    <label for="private-service">Estoy interesado en:</label>
+                    <select id="private-service" name="private-service" required>
+                        <option value="desarrollo-web">Desarrollo Web</option>
+                        <option value="optimizacion-seo">Optimización para motores de búsqueda (SEO)</option>
+                        <option value="consultoria-web">Consultoría en tecnología web</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="presupuesto">Rango de presupuesto:</label>
+                    <input type="text" id="presupuesto" name="presupuesto" required placeholder="Ej. $1000 - $5000">
+                </div>
+                <div>
+                    <label for="plazo">Plazo estimado:</label>
+                    <input type="text" id="plazo" name="plazo" required placeholder="Ej. 1 mes, 3 meses">
+                </div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="8" required
+                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </span>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2025 Emilio Jasso. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
