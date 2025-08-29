@@ -1,9 +1,19 @@
 const modal = document.getElementById("modal");
 const form = document.getElementById('contact-form');
+
+const modalOverlay = document.getElementById("modal-overlay");
+
 form.addEventListener("submit", function (e) {
     e.preventDefault();
-    modal.style.display = 'block'
+    modalOverlay.classList.add("active");
+    form.reset();
     setTimeout(() => {
-        modal.style.display = 'none';
-    }, 5000);
-})
+        modalOverlay.classList.remove("active");
+    }, 3000);
+});
+
+modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove("active");
+    }
+});
