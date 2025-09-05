@@ -36,7 +36,7 @@
     <!-- HEADER -->
     <header id="header">
         <section class="intro">
-            <span class="intro-texts">
+            <div class="intro-texts">
                 <p class="intro-text">Hola, soy un desarrollador web.</p>
                 <h1 class="intro-name">Soy Emilio Jasso</h1>
                 <h2 class="intro-role">Desarrollador Frontend</h2>
@@ -47,8 +47,8 @@
                 </p>
             </span>
             <span>
-                <a href="#projects"><button class="cta-btn cta-btn-primary">Ver Proyectos</button></a>
-                <a href="#contact"><button class="cta-btn cta-btn-secondary">Contáctame</button></a>
+                <a href="#projects" class="cta-btn cta-btn-primary">Ver Proyectos</a>
+                <a href="#contact" class="cta-btn cta-btn-secondary">Contáctame</a>
             </span>
         </section>
         <picture class="profile-picture">
@@ -209,7 +209,7 @@
 
     <!-- INFORMACION/CONTACTO DE MI -->
     <section id="contact">
-        <span class="contact-data">
+        <div class="contact-data">
             <h2>Conversemos sobre tu próximo proyecto</h2>
             <p>
                 ¿Tienes una idea en mente o necesitas ayuda con tu sitio web?
@@ -244,8 +244,8 @@
                     </p>
                 </div>
             </div>
-        </span>
-        <span class="contact-data">
+        </div>
+        <div class="contact-data">
             <form class="contact-form" id="contact-form">
                 <div>
                     <label for="nombre">Nombre:</label>
@@ -262,6 +262,7 @@
                 <div>
                     <label for="private-service">Estoy interesado en:</label>
                     <select id="private-service" name="private-service" required>
+                        <option value="">Seleccione una opción</option>
                         <option value="desarrollo-web">Desarrollo Web</option>
                         <option value="optimizacion-seo">Optimización para motores de búsqueda (SEO)</option>
                         <option value="consultoria-web">Consultoría en tecnología web</option>
@@ -280,7 +281,7 @@
                     placeholder="Escribe tu mensaje aquí..."></textarea>
                 <button type="submit">Enviar</button>
             </form>
-        </span>
+        </div>
     </section>
 
     <!-- FOOTER -->

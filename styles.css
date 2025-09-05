@@ -134,6 +134,7 @@ li {
 	cursor: pointer;
 	transition: 0.3s;
 	font-family: "Inter", "Arial", sans-serif;
+	text-decoration: none;
 }
 
 .cta-btn-primary {
